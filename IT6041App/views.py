@@ -142,3 +142,8 @@ def staff(request):
 def privacy(request):
     page_title = 'Privacy Policy'
     return render(request, 'IT6041App/privacy.html', {'page_title': page_title})
+
+
+def terms(request):
+    page_title = 'Terms and Conditions'
+    return render(request, 'IT6041App/terms.html', {'page_title': page_title})
