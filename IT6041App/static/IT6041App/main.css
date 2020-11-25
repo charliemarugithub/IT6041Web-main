@@ -216,32 +216,7 @@ body h1 {
   padding-right: 50px;
 }
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-/*Note: always use px for media queries, it is more precise, also @media by itself is not valid.
- the following is the old code*/
-/*Bump up size of carousel content
-@media (min-width: 640px) {
-  
 
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}*/
-
-/* the following is the new code for the queries*/
 @media only screen and (max-width: 600px) {
   #myCarousel{
     margin-top: 15px;
