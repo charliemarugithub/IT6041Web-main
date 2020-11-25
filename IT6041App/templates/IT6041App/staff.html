@@ -1,0 +1,88 @@
+{% extends "IT6041App/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<style>
+    body {
+      padding-top: 65px;
+    }
+
+    .content-section {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .card{
+        margin: 20px 0 0 0;
+    }
+
+    .placement-image {
+        min-height: 300px;
+        width: 100%;
+        display: block;
+   }
+
+    .profile-name {
+        text-align: left;
+        float: left;
+    }
+
+    .profile-title {
+        text-align: right;
+        float: right;
+        max-width: 150px;
+    }
+
+    .profile {
+        margin: auto;
+    }
+</style>    
+
+<div class="container">
+    <div class="row">
+       <div class="col-md-12">
+            <br/><br/>
+            <h2>Staff Contact Page</h2>
+            <p>We at GreenWorld pride ourself on creating ecologically friendly products which help ensure the world will be
+                a stable, eco-friendly place! Our mission is to create a plethora of ecologically sustainable products for 
+                everyone around the world to enjoy.
+            </p>
+       </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-md-12 justify-content-start">
+            <h2>Meet Our Team</h2>
+        </div>
+    </div>
+
+    {% for i in staff %}
+        <!-- using the cycle tag, every 3 staff are in the same row -->
+        {% cycle '<div class="row justify-content-md-center">' '' ''%}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <img class="placement-image" src="{{ i.image.url }}" />
+                    <br/>
+                    <h5 class="profile-name">{{ i.staff_full_name }}</h5>
+                    <h6 class="profile-title">{{ i.department_role }}</h6>
+                    <br/><br/>
+                    <div class="card-text">Email: {{ i.work_email }}</div>
+                    <div class="card-text">Phone: {{ i.work_phone }}</div>
+                    <div class="card-text">Mobile: {{ i.mobile_phone }}</div>
+                </div>
+            </div>
+        </div>
+    {% cycle '' '' '</div>'%}
+    
+{% endfor %}
+<br />
+
+    </div>
+</div>
+<br>
+{% endblock content %}

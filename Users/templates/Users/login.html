@@ -1,0 +1,47 @@
+{% extends "IT6041App/base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<style>
+       .container {
+        text-align: left;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 22%;
+      }
+
+      .content-section {
+        width: 50%;
+      }
+</style>
+<br>
+  <div class="container">
+      <div class="row">
+         <div class="col">
+            <br><br><br>
+              <div>
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-8">Log In</legend>
+                        {{ form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-outline-info" type="submit">Log In</button>
+                    </div>
+                </form>
+              </div>
+            <div class="border-top pt-3">
+                <small class="text-muted">
+                    Need an account?<a class="ml-2" href="{% url 'register' %}">Sign Up Now</a>
+                </small>
+            </div>
+         </div>
+      </div>
+  </div>
+<br><br><br>
+
+{% endblock content %}
