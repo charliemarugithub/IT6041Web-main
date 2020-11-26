@@ -1,0 +1,45 @@
+{% extends "IT6041App/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <br><br>
+
+    <style>
+
+        h2 {
+            display: block;
+            text-align: center;
+        }
+        .row {
+         padding-left: 100px;
+         padding-right: 100px;
+        }
+
+        .thumbnail {
+          height: 350px;
+        }
+    </style>
+    <h2>Cleaning Products</h2>
+    <br>
+
+      <div class="row">
+          {% for i in products %}
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="thumbnail"  src="{{ i.image.url }}">
+                        <div class="box-element product">
+                            <h6><strong>{{ i.product_name }}</strong></h6>
+                            <hr>
+                            <button data-product="{{ i.id }}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                            <a class="btn btn-outline-success" href="#">View</a>
+                            <h4 style="display: inline-block; float: right">{{ i.price }}</h4>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+          {% endfor %}
+      </div>
+
+    <br><br><br>
+{% endblock content %}

@@ -1,0 +1,73 @@
+{% extends "IT6041App/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <br><br>
+
+    <style>
+
+        .row {
+          padding-left: 8px;
+        }
+
+        h2 {
+            display: block;
+            text-align: center;
+            padding-left: 8px;
+        }
+
+        .thumbnail {
+          height: 350px;
+          width: 275px;
+        }
+
+        .box-element {
+          width: 275px;
+        }
+    </style>
+
+    <main class="container">
+
+      <h3>Search by Catergory</h3>
+        <br>
+          <form method="GET" action=".">
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <div class="input-group">
+                        <input class="form-control py-2 border-right-0 border" type="search" name="title_contains" placeholder="Title contains..." />
+                        <span class="input-group-append">
+                            <div class="input-group-text bg-transparent">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+             <button type="submit" class="btn btn-success">Search</button>
+          </form>
+        <br>
+        <div class="row">
+          <h2>Enjoy all our products here</h2>
+          <br><br><br>
+          <div class="row">
+              {% for i in queryset %}
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img class="thumbnail"  src="{{ i.image.url }}">
+                            <div class="box-element product">
+                                <h6><strong>{{ i.product_name }}</strong></h6>
+                                <hr>
+                                <button data-product="{{ i.id }}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                                <a class="btn btn-outline-success" href="#">View</a>
+                                <h4 style="display: inline-block; float: right">{{ i.price }}</h4>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+              {% endfor %}
+          </div>
+        </div>
+    </main>
+    <br><br><br>
+{% endblock content %}

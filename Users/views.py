@@ -2,10 +2,13 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib import messages
 
+from IT6041App.utils import cartData
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 
 
 def register(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
@@ -15,11 +18,13 @@ def register(request):
             return redirect('login')
     else:
         form = UserRegisterForm()
-    return render(request, 'Users/register.html', {'form': form})
+    return render(request, 'Users/register.html', {'form': form, 'cartItems': cartItems})
 
 
 @login_required
 def profile(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
     if request.method == 'POST':
         u_form = UserUpdateForm(request.POST, instance=request.user)
         p_form = ProfileUpdateForm(request.POST,
@@ -36,7 +41,8 @@ def profile(request):
 
     context = {
         'u_form': u_form,
-        'p_form': p_form
+        'p_form': p_form,
+        'cartItems': cartItems,
     }
     return render(request, 'Users/profile.html', context)
 

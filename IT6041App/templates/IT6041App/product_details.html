@@ -1,0 +1,43 @@
+{% extends "IT6041App/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <br><br>
+
+    <style>
+
+        h2 {
+            display: block;
+            text-align: center;
+        }
+        .row {
+         padding-left: 100px;
+         padding-right: 100px;
+        }
+
+        .thumbnail {
+          height: 350px;
+        }
+    </style>
+    <h2>Accessories</h2>
+    <br>
+
+      <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="thumbnail"  src="{{ obj.image.url }}">
+                        <div class="box-element product">
+                            <h6><strong>{{ obj.product_name }}</strong></h6>
+                            <h6>{{ obj.description }}</h6>
+                            <hr>
+                            <button data-product="{{ obj.id }}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                            <h4 style="display: inline-block; float: right">{{ obj.price }}</h4>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+      </div>
+
+    <br><br><br>
+{% endblock content %}

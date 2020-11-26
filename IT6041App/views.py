@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 import json
 import datetime
@@ -151,3 +151,78 @@ def terms(request):
     cartItems = data['cartItems']
     page_title = 'Terms and Conditions'
     return render(request, 'IT6041App/terms.html', {'page_title': page_title, 'cartItems': cartItems})
+
+
+def clothing(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
+    order = data['order']
+    items = data['items']
+
+    products = Products.objects.filter(category='Clothing')
+    context = {'products': products, 'cartItems': cartItems}
+    return render(request, 'IT6041App/clothing.html', context)
+
+
+def gardening(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
+    order = data['order']
+    items = data['items']
+
+    products = Products.objects.filter(category='Gardening')
+    context = {'products': products, 'cartItems': cartItems}
+    return render(request, 'IT6041App/gardening.html', context)
+
+
+def accessories(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
+    order = data['order']
+    items = data['items']
+
+    products = Products.objects.filter(category='Accessories')
+    context = {'products': products, 'cartItems': cartItems}
+    return render(request, 'IT6041App/accessories.html', context)
+
+
+def furniture(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
+    order = data['order']
+    items = data['items']
+
+    products = Products.objects.filter(category='Furniture')
+    context = {'products': products, 'cartItems': cartItems}
+    return render(request, 'IT6041App/furniture.html', context)
+
+
+def cleaning(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
+    order = data['order']
+    items = data['items']
+
+    products = Products.objects.filter(category='Cleaning Products')
+    context = {'products': products, 'cartItems': cartItems}
+    return render(request, 'IT6041App/cleaning.html', context)
+
+
+def allproducts(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
+    order = data['order']
+    items = data['items']
+    qs = Products.objects.all()
+    category_contains_query = request.GET.get('category_contains')
+
+    if category_contains_query != '' and category_contains_query is not None:
+        qs = qs.filter(category__icontains=category_contains_query)
+
+    context = {'queryset': qs, 'cartItems': cartItems}
+    return render(request, 'IT6041App/allproducts.html', context)
+
+
+def product_details(request, id):
+    obj = get_object_or_404(Products, pk=id)
+    return render(request, 'IT6041App/product_details.html', {'obj': obj})

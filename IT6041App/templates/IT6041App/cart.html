@@ -25,9 +25,11 @@
 							<div style="flex:1" align="center">
 								<p class="quantity">x{{ item.quantity }}</p>
 								<div class="quantity">
-									<img data-product="{{ item.product.id }}" data-action="add" class="chg-quantity update-cart" src="{% static  'media/arrow-up.png' %}">
+									<img data-product="{{ item.product.id }}" data-action="add" class="chg-quantity
+									update-cart" src="{% static  'media/arrow-up.png' %}">
 
-									<img data-product="{{ item.product.id }}" data-action="remove" class="chg-quantity update-cart" src="{% static  'media/arrow-down.png' %}">
+									<img data-product="{{ item.product.id }}" data-action="remove" class="chg-quantity
+									update-cart" src="{% static  'media/arrow-down.png' %}">
 								</div>
 							</div>
 						<div style="flex:1" align="center"><p>${{ item.get_total|floatformat:2 }}</p></div>
