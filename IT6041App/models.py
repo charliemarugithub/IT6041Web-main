@@ -20,7 +20,7 @@ class Products(models.Model):
         ordering = ('-product_name',)
 
     def __str__(self):
-        return self.product_name
+        return str(self.id)
 
     @property
     def imageURL(self):
