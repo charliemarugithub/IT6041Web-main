@@ -224,5 +224,7 @@ def allproducts(request):
 
 
 def product_details(request, id):
+    data = cartData(request)
+    cartItems = data['cartItems']
     obj = get_object_or_404(Products, pk=id)
-    return render(request, 'IT6041App/product_details.html', {'obj': obj})
+    return render(request, 'IT6041App/product_details.html', {'obj': obj, 'cartItems': cartItems})

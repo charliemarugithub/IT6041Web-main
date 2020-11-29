@@ -21,14 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c47cdc49-122d-49ad-9400-fa7708044cda" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/accessories.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/accessories.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/allproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/allproducts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cleaning.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cleaning.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/clothing.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/clothing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/furniture.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/furniture.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/gardening.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/gardening.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,17 +107,18 @@
     </state>
     <state x="3074" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604465853768" />
     <state x="844" y="258" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605072335786" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606383239930">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606600137167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606383239930" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606600137167" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1604198297265">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604198297265" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606262793992">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606628223066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606262793992" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606628223066" />
   </component>
 </project>
