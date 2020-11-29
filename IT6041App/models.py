@@ -14,6 +14,7 @@ class Products(models.Model):
     no_of_sales = models.IntegerField(default='0', null=True, blank=True)
     popular = models.BooleanField(default=False, null=True, blank=True)
     digital = models.BooleanField(default=False, null=True, blank=True)
+    carousel_listing = models.BooleanField(default=False, null=True, blank=True)
 
     class Meta:
         verbose_name_plural = 'Products'
@@ -29,6 +30,7 @@ class Products(models.Model):
         except:
             url = ''
         return url
+
 
 
 class Customer(models.Model):
@@ -89,6 +91,25 @@ class ShippingAddress(models.Model):
         return self.address
 
 
+
+
+class Voucher(models.Model):
+    voucher_type = models.CharField(max_length=40, default='', null=True)
+    voucher_code = models.CharField(max_length=20, default='', null=True)
+    description = models.CharField(max_length=200, default='', null=True)
+
+    class Meta:
+        ordering = ('-voucher_type',)
+
+    def __str__(self):
+        return self.voucher_type
+
+    # Voucher example:
+    # voucher_type = "Discount25"
+    # voucher_code = "dh9277jd"
+    # description = "Get 25% off your current order."
+
+
 class Staff(models.Model):
     staff_full_name = models.CharField(max_length=200)
     work_email = models.EmailField(max_length=200)
@@ -114,20 +135,3 @@ class Staff(models.Model):
             output_size = (300, 250)
             img.thumbnail(output_size)
             img.save(self.profile_image.path)
-
-
-class Voucher(models.Model):
-    voucher_type = models.CharField(max_length=40)
-    voucher_code = models.CharField(max_length=20)
-    description = models.CharField(max_length=200)
-
-    class Meta:
-        ordering = ('-voucher_type',)
-
-    def __str__(self):
-        return self.voucher_type
-
-    # Voucher example:
-    # voucher_type = "Discount25"
-    # voucher_code = "dh9277jd"
-    # description = "Get 25% off your current order."

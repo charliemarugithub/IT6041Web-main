@@ -4,7 +4,8 @@ from .models import Products, \
     Order, \
     OrderItem, \
     ShippingAddress, \
-    Staff
+    Staff, \
+    Voucher
 
 
 # Register your models here.
@@ -18,6 +19,7 @@ class ProductsAdmin(admin.ModelAdmin):
                     'image',
                     'popular',
                     'digital',
+                    'carousel_listing',
                     )
 
     def product_name(self, obj):
@@ -83,9 +85,17 @@ class StaffAdmin(admin.ModelAdmin):
         return obj.staff_full_name
 
 
+class VoucherAdmin(admin.ModelAdmin):
+    list_display = ('voucher_type',
+                    'voucher_code',
+                    'description',
+                    )
+
+
 admin.site.register(Products, ProductsAdmin)
 admin.site.register(Customer, CustomersAdmin)
 admin.site.register(Order, OrdersAdmin)
 admin.site.register(OrderItem, OrderItemsAdmin)
 admin.site.register(ShippingAddress, ShippingAddressAdmin)
 admin.site.register(Staff, StaffAdmin)
+admin.site.register(Voucher, VoucherAdmin)

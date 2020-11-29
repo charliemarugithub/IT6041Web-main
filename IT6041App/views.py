@@ -11,9 +11,9 @@ def index(request):
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
-
+    carousel = Products.objects.filter(carousel_listing=True)
     products = Products.objects.filter(popular=True)
-    context = {'products': products, 'cartItems': cartItems}
+    context = {'products': products, 'cartItems': cartItems, 'carousel': carousel}
     return render(request, 'IT6041App/index.html', context)
 
 
