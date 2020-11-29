@@ -18,17 +18,14 @@
 
         /* Responsive navigation menu (for mobile devices) */
         @media screen and (max-width: 950px) {
-          .topnav a, .topnav-right {
-            float: none;
-            display: flex;
-            width: 50%;
-          }
+          .topnav-right {
+            position: fixed;
+            width: 100%;
+            top: 40px;
+            background: #5ed100;
+            left: 0px;
+            text-align: right;
 
-          .topnav-centered a {
-            position: relative;
-            top: 0;
-            left: 0;
-            transform: none;
           }
         }
 
@@ -195,17 +192,17 @@
                   <!-- Right-aligned links checking if user is authenticate or not-->
                   {% if user.is_authenticated %}
                      <div class="topnav-right">
-                         <a class="nav-item nav-link" href="#">Welcome {{ user.username }}</a>
-                         <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
-                         <a class="nav-item nav-link" href="{% url 'cart' %}">
+                         <a class="nav-item-username nav-link" href="#">Welcome {{ user.username }}</a>
+                         <a class="nav-item-logout nav-link" href="{% url 'logout' %}">Logout</a>
+                         <a class="nav-item-cart nav-link" href="{% url 'cart' %}">
                          <img id="cart-icon" src="{% static 'media/cart.jpg' %}">
                           <p id="cart-total">{{ cartItems }}</p>
                          </a>
                         {% else %}
                         <div class="topnav-right">
-                            <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                            <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
-                            <a class="nav-item nav-link" href="{% url 'cart' %}">
+                            <a class="nav-item-login nav-link" href="{% url 'login' %}">Login</a>
+                            <a class="nav-item-register nav-link" href="{% url 'register' %}">Register</a>
+                            <a class="nav-item-cart nav-link" href="{% url 'cart' %}">
                              <img id="cart-icon" src="{% static 'media/cart.jpg' %}">
                              <p id="cart-total">{{ cartItems }}</p>
                             </a>

@@ -1,5 +1,21 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 1200px) {
+ .card, .thumbnail, .box-element {
+   width: 300px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #myCarousel, .carousel-item{
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
 /* Padding below the footer and lighter body text */
 
 body {
@@ -216,13 +232,6 @@ body h1 {
   padding-right: 50px;
 }
 
-
-@media only screen and (max-width: 620px) {
-  #myCarousel, .carousel-item{
-    margin-top: 15px;
-    width: 100%;
-  }
-}
 
 /* cart icon */
 
