@@ -217,9 +217,10 @@ body h1 {
 }
 
 
-@media only screen and (max-width: 600px) {
-  #myCarousel{
+@media only screen and (max-width: 620px) {
+  #myCarousel, .carousel-item{
     margin-top: 15px;
+    width: 100%;
   }
 }
 
