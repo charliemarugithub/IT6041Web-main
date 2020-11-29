@@ -111,6 +111,7 @@ class Voucher(models.Model):
 
 
 class Staff(models.Model):
+    staff_id = models.AutoField(primary_key=True, null=False, default='', editable=False)
     staff_full_name = models.CharField(max_length=200)
     work_email = models.EmailField(max_length=200)
     work_phone = models.CharField(max_length=20)
@@ -135,3 +136,8 @@ class Staff(models.Model):
             output_size = (300, 250)
             img.thumbnail(output_size)
             img.save(self.profile_image.path)
+
+
+
+
+

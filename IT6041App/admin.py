@@ -72,7 +72,8 @@ class ShippingAddressAdmin(admin.ModelAdmin):
 
 
 class StaffAdmin(admin.ModelAdmin):
-    list_display = ('staff_full_name',
+    list_display = ('staff_id',
+                    'staff_full_name',
                     'work_email',
                     'work_phone',
                     'mobile_phone',
@@ -83,6 +84,16 @@ class StaffAdmin(admin.ModelAdmin):
 
     def staff(self, obj):
         return obj.staff_full_name
+
+
+class MemberAdmin(admin.ModelAdmin):
+    list_display = ('name',
+                    'email',
+                    'phone',
+                    'mobile',
+                    'role',
+                    'image',
+                    'display')
 
 
 class VoucherAdmin(admin.ModelAdmin):
@@ -97,5 +108,5 @@ admin.site.register(Customer, CustomersAdmin)
 admin.site.register(Order, OrdersAdmin)
 admin.site.register(OrderItem, OrderItemsAdmin)
 admin.site.register(ShippingAddress, ShippingAddressAdmin)
-admin.site.register(Staff, StaffAdmin)
 admin.site.register(Voucher, VoucherAdmin)
+admin.site.register(Staff, StaffAdmin)

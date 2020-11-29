@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 import json
@@ -52,8 +53,10 @@ def updateItem(request):
 
     if action == 'add':
         orderItem.quantity = (orderItem.quantity + 1)
+        messages.success(request, f'Item added to your cart!  ')
     elif action == 'remove':
         orderItem.quantity = (orderItem.quantity - 1)
+        messages.success(request, f'Item removed from your cart!  ')
 
     orderItem.save()
 

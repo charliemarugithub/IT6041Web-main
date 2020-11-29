@@ -38,7 +38,7 @@
                             <h6>{{ obj.description }}</h6>
                             <hr>
                             <button data-product="{{ obj.id }}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a class="btn btn-outline-success" type="button" onclick="history.back()">Go Back!</a>
                             <h4 style="display: inline-block; float: right">{{ obj.price }}</h4>
                         </div>
                     </div>

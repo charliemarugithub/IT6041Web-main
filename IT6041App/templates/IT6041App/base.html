@@ -93,7 +93,10 @@
           background-color: #5ed100;;
         }
 
-
+        .alert {
+          text-align: right;
+          padding-right: 50px;
+        }
     </style>
 
     <!-- Custom styles for this template -->
@@ -238,9 +241,9 @@
           </div>
         </header>
       </body>
+
             {% if messages %}
                 {% for message in messages %}
-                    <br><br><br>
                     <div class="alert alert-{{ message.tags }}">
                         {{ message }}
                     </div>
