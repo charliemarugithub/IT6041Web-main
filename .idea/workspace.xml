@@ -23,14 +23,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/accessories.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/accessories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/allproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/allproducts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cleaning.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cleaning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/clothing.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/clothing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/furniture.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/furniture.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/gardening.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/gardening.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/privacy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/staff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/terms.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/charlie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_pics/default.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/Porangahau1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/Porangahau1_Nb9mc72.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/charlie.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

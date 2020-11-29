@@ -16,39 +16,39 @@
 					<div style="flex:1" align="center"><strong>Price</strong></div>
 					<div style="flex:1" align="center"><strong>Quantity</strong></div>
 					<div style="flex:1" align="center"><strong>Total</strong></div>
-				</div>
-				{% for item in items %}
-					<div class="cart-row">
-						<div style="flex:2"><img class="row-image" src="{{ item.product.imageURL }}"></div>
-						<div style="flex:1" align="left"><p>{{ item.product.product_name }}</p></div>
-						<div style="flex:1" align="center"><p>${{ item.product.price|floatformat:2 }}</p></div>
-							<div style="flex:1" align="center">
-								<p class="quantity">x{{ item.quantity }}</p>
-								<div class="quantity">
-									<img data-product="{{ item.product.id }}" data-action="add" class="chg-quantity
-									update-cart" src="{% static  'media/arrow-up.png' %}">
-
-									<img data-product="{{ item.product.id }}" data-action="remove" class="chg-quantity
-									update-cart" src="{% static  'media/arrow-down.png' %}">
-								</div>
-							</div>
-						<div style="flex:1" align="center"><p>${{ item.get_total|floatformat:2 }}</p></div>
 					</div>
-				{% endfor %}
-			</div>
-			<br>
-			<div class="box-element">
+					<!-- looping through all products in the cart to render out the view -->
+					{% for item in items %}
+						<div class="cart-row">
+							<div style="flex:2"><img class="row-image" src="{{ item.product.imageURL }}"></div>
+							<div style="flex:1" align="left"><p>{{ item.product.product_name }}</p></div>
+							<div style="flex:1" align="center"><p>${{ item.product.price|floatformat:2 }}</p></div>
+								<div style="flex:1" align="center">
+									<p class="quantity">x{{ item.quantity }}</p>
+									<div class="quantity">
+										<img data-product="{{ item.product.id }}" data-action="add" class="chg-quantity
+										update-cart" src="{% static  'media/arrow-up.png' %}">
 
-                <br><br>
-                <table class="table">
-					<tr>
-						<th><h5>Items:   <strong>{{ order.get_cart_items }}</strong></h5></th>
-						<th colspan="2" id="total-cost"><h5>Total:<strong>$ {{ order.get_cart_total|floatformat:2  }}</strong></h5></th>
-						<th>
-							<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
-						</th>
-					</tr>
-				</table>
+										<img data-product="{{ item.product.id }}" data-action="remove" class="chg-quantity
+										update-cart" src="{% static  'media/arrow-down.png' %}">
+									</div>
+								</div>
+							<div style="flex:1" align="center"><p>${{ item.get_total|floatformat:2 }}</p></div>
+						</div>
+					{% endfor %}
+					</div>
+					<br>
+					<div class="box-element">
+					<br><br>
+					<table class="table">
+						<tr>
+							<th><h5>Items:   <strong>{{ order.get_cart_items }}</strong></h5></th>
+							<th colspan="2" id="total-cost"><h5>Total:<strong>$ {{ order.get_cart_total|floatformat:2  }}</strong></h5></th>
+							<th>
+								<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
+							</th>
+						</tr>
+					</table>
 			</div>
 		</div>
 	</div>

@@ -10,6 +10,7 @@
     }
 </style>
 
+ <!-- Setup of main carousel -->
 <main role="main">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -17,6 +18,7 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
+     <!-- first carousel item is hardcoded   -->
     <div class="carousel-inner">
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="white"/></svg>
@@ -29,6 +31,7 @@
           </div>
         </div>
       </div>
+      <!-- rest of carousel items are based on boolean value of 'carousel_listing  -->
       {% for listing in carousel %}
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="white"/></svg>
@@ -42,6 +45,7 @@
         </div>
       </div>
       {% endfor %}
+      <!-- unseen links to go to next / previous carousel item -->
      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -98,6 +102,7 @@
     <br>
 
       <div class="row">
+          <!-- looping through all products with boolean value 'popular' set to True  -->
           {% for i in products %}
                 <div class="col-sm-4">
                     <div class="card">

@@ -31,6 +31,7 @@
           }
         }
 
+
         /* Burger Button and Menu */
         .burger-button {
           width:35px;
@@ -103,6 +104,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'IT6041App/main.css' %}">
 
     <script type="text/javascript">
+
+
 		var user = '{{request.user}}'
 
 		function getToken(name) {
@@ -187,10 +190,8 @@
                       <a href="{% url 'index' %}" class="active" title="Home page"><h1>GreenWorld's</h1></a>
                   </div>
 
-                  <!-- Left-aligned links (default) -->
-                  <!-- if required -->
 
-                  <!-- Right-aligned links -->
+                  <!-- Right-aligned links checking if user is authenticate or not-->
                   {% if user.is_authenticated %}
                      <div class="topnav-right">
                          <a class="nav-item nav-link" href="#">Welcome {{ user.username }}</a>
@@ -241,7 +242,7 @@
           </div>
         </header>
       </body>
-
+            <!-- message alerts to pop up when user is added and/or items removed from the cart -->
             {% if messages %}
                 {% for message in messages %}
                     <div class="alert alert-{{ message.tags }}">
@@ -252,7 +253,7 @@
 
             {% block content %}
 
-
+            <!-- block content of page goes here -->
 
             {% endblock content %}
 

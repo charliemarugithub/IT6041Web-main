@@ -72,8 +72,7 @@ class ShippingAddressAdmin(admin.ModelAdmin):
 
 
 class StaffAdmin(admin.ModelAdmin):
-    list_display = ('staff_id',
-                    'staff_full_name',
+    list_display = ('staff_full_name',
                     'work_email',
                     'work_phone',
                     'mobile_phone',

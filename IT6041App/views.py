@@ -137,8 +137,7 @@ def staff(request):
 
     staff = Staff.objects.all()
 
-    products = Products.objects.filter(category='Clothing')
-    context = {'products': products, 'cartItems': cartItems, 'staff': staff}
+    context = {'cartItems': cartItems, 'staff': staff}
     return render(request, 'IT6041App/staff.html', context)
 
 
