@@ -22,6 +22,14 @@
           width: 357px;
         }
     </style>
+
+    <script>
+         if (sessionStorage.getItem("Page2Visited")) {
+              sessionStorage.removeItem("Page2Visited");
+              window.location.reload(true); // force refresh page1
+         }
+    </script>
+
     <h2>Furniture</h2>
 
     <br>

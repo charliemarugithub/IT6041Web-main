@@ -20,6 +20,12 @@
     }
 </style>
 
+<script>
+     if (sessionStorage.getItem("Page2Visited")) {
+          sessionStorage.removeItem("Page2Visited");
+          window.location.reload(true); // force refresh page1
+     }
+</script>
  <!-- Setup of main carousel -->
 <main role="main">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">

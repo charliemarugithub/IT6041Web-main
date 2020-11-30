@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.core.mail.backends import console
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 import json
