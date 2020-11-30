@@ -44,6 +44,12 @@
 						<tr>
 							<th><h5>Items:   <strong>{{ order.get_cart_items }}</strong></h5></th>
 							<th colspan="2" id="total-cost"><h5>Total:<strong>$ {{ order.get_cart_total|floatformat:2  }}</strong></h5></th>
+							<div class="input-group">
+								  <input type="text" class="form-control" placeholder="Enter Discount Voucher..." aria-label="discount voucher input" aria-describedby="button-addon">
+								  <div class="input-group-append" id="button-addon">
+									<button class="btn btn-outline-secondary" type="button">Discount Price Now?</button>
+								  </div>
+								</div>
 							<th>
 								<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
 							</th>

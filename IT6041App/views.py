@@ -24,7 +24,8 @@ def cart(request):
     order = data['order']
     items = data['items']
 
-    context = {'items': items, 'order': order, 'cartItems': cartItems}
+    context = {'items': items,
+               'order': order}
     return render(request, 'IT6041App/cart.html', context)
 
 
