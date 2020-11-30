@@ -3,6 +3,17 @@
 {% load static %}
 
 {% block content %}
+	<style>
+		h6 {
+		  padding-right: 40px;
+		  padding-left: 12px;
+		  padding-top: 12px;
+		}
+
+		.input-group-append {
+		  padding-right: 20px;
+		}
+	</style>
 
     <br><br>
 	<div class="row justify-content-md-center">
@@ -45,11 +56,12 @@
 							<th><h5>Items:   <strong>{{ order.get_cart_items }}</strong></h5></th>
 							<th colspan="2" id="total-cost"><h5>Total:<strong>$ {{ order.get_cart_total|floatformat:2  }}</strong></h5></th>
 							<div class="input-group">
-								  <input type="text" class="form-control" placeholder="Enter Discount Voucher..." aria-label="discount voucher input" aria-describedby="button-addon">
-								  <div class="input-group-append" id="button-addon">
-									<button class="btn btn-outline-secondary" type="button">Discount Price Now?</button>
-								  </div>
-								</div>
+								<h6>Do you have a voucher? Redeem it here > </h6>
+							  <input type="text" class="form-control" placeholder="Enter Discount Voucher..." aria-label="discount voucher input" aria-describedby="button-addon">
+							  <div class="input-group-append" id="button-addon">
+								<button class="btn btn-outline-secondary" type="button">Discount Price Now?</button>
+							  </div>
+							</div><br>
 							<th>
 								<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
 							</th>
