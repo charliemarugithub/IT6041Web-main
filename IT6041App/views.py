@@ -31,7 +31,7 @@ def cart(request):
                'order': order,
                'cartItems': cartItems,
                'coupon_apply_form': coupon_apply_form}
-
+    print(coupon_apply_form)
     return render(request, 'IT6041App/cart.html', context)
 
 
