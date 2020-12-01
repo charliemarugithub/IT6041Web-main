@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'IT6041App.apps.IT6041appConfig',
     'Users.apps.UsersConfig',
     'crispy_forms',
+    'coupons',
 ]
 
 MIDDLEWARE = [

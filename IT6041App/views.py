@@ -6,6 +6,7 @@ import json
 import datetime
 from .models import *
 from .utils import cookieCart, cartData, guestOrder
+from coupons.forms import CouponApplyForm
 
 
 def index(request):
@@ -24,10 +25,13 @@ def cart(request):
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
+    coupon_apply_form = CouponApplyForm()
 
     context = {'items': items,
                'order': order,
-               'cartItems': cartItems}
+               'cartItems': cartItems,
+               'coupon_apply_form': coupon_apply_form}
+
     return render(request, 'IT6041App/cart.html', context)
 
 
@@ -161,8 +165,6 @@ def terms(request):
 def clothing(request):
     data = cartData(request)
     cartItems = data['cartItems']
-    order = data['order']
-    items = data['items']
 
     products = Products.objects.filter(category='Clothing')
     context = {'products': products, 'cartItems': cartItems}
@@ -172,8 +174,6 @@ def clothing(request):
 def gardening(request):
     data = cartData(request)
     cartItems = data['cartItems']
-    order = data['order']
-    items = data['items']
 
     products = Products.objects.filter(category='Gardening')
     context = {'products': products, 'cartItems': cartItems}
@@ -183,8 +183,6 @@ def gardening(request):
 def accessories(request):
     data = cartData(request)
     cartItems = data['cartItems']
-    order = data['order']
-    items = data['items']
 
     products = Products.objects.filter(category='Accessories')
     context = {'products': products, 'cartItems': cartItems}
@@ -194,8 +192,6 @@ def accessories(request):
 def furniture(request):
     data = cartData(request)
     cartItems = data['cartItems']
-    order = data['order']
-    items = data['items']
 
     products = Products.objects.filter(category='Furniture')
     context = {'products': products, 'cartItems': cartItems}
@@ -205,8 +201,6 @@ def furniture(request):
 def cleaning(request):
     data = cartData(request)
     cartItems = data['cartItems']
-    order = data['order']
-    items = data['items']
 
     products = Products.objects.filter(category='Cleaning Products')
     context = {'products': products, 'cartItems': cartItems}
@@ -216,8 +210,7 @@ def cleaning(request):
 def allproducts(request):
     data = cartData(request)
     cartItems = data['cartItems']
-    order = data['order']
-    items = data['items']
+
     qs = Products.objects.all()
     category_contains_query = request.GET.get('category_contains')
 

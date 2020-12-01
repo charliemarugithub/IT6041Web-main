@@ -1,5 +1,6 @@
 import json
 from .models import *
+from coupons.views import coupon_apply
 
 
 def cookieCart(request):
@@ -13,6 +14,7 @@ def cookieCart(request):
     items = []
     order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
     cartItems = order['get_cart_items']
+    coupon_id = coupon_apply.request.session['coupon_id']
 
     for i in cart:
         try:
@@ -41,7 +43,7 @@ def cookieCart(request):
         except:
             pass
 
-    return {'cartItems': cartItems, 'order': order, 'items': items}
+    return {'cartItems': cartItems, 'order': order, 'items': items, 'coupon_id': coupon_id}
 
 
 def cartData(request):
@@ -50,6 +52,7 @@ def cartData(request):
         order, created = Order.objects.get_or_create(customer=customer, complete=False)
         items = order.orderitem_set.all()
         cartItems = order.get_cart_items
+
     else:
         cookieData = cookieCart(request)
         cartItems = cookieData['cartItems']
