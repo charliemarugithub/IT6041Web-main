@@ -16,11 +16,12 @@ def cookieCart(request):
     cartItems = order['get_cart_items']
 
     for i in cart:
+        # We use try block to prevent items in cart that may have been removed from causing error
         try:
-            cartItems += cart[i]["quantity"]
+            cartItems += cart[i]['quantity']
 
             product = Products.objects.get(id=i)
-            total = (product.price * cart[i]["quantity"])
+            total = (product.price * cart[i]['quantity'])
 
             order['get_cart_total'] = order['get_cart_total'] + float(total)
             order['get_cart_items'] = order['get_cart_items'] + cart[i]["quantity"]
@@ -37,8 +38,8 @@ def cookieCart(request):
             }
             items.append(item)
 
-            if not product.digital:
-                shipping = True
+            if product.digital == False:
+                order['shipping'] = True
         except:
             pass
 
@@ -51,8 +52,6 @@ def cartData(request):
         order, created = Order.objects.get_or_create(customer=customer, complete=False)
         items = order.orderitem_set.all()
         cartItems = order.get_cart_items
-        coupon_id = coupon_apply.request.session['coupon_id']
-
     else:
         cookieData = cookieCart(request)
         cartItems = cookieData['cartItems']

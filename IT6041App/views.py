@@ -12,8 +12,6 @@ from coupons.forms import CouponApplyForm
 def index(request):
     data = cartData(request)
     cartItems = data['cartItems']
-    order = data['order']
-    items = data['items']
     carousel = Products.objects.filter(carousel_listing=True)
     products = Products.objects.filter(popular=True)
     context = {'products': products, 'cartItems': cartItems, 'carousel': carousel}
@@ -31,6 +29,7 @@ def cart(request):
                'order': order,
                'cartItems': cartItems,
                'coupon_apply_form': coupon_apply_form}
+
     print(coupon_apply_form)
     return render(request, 'IT6041App/cart.html', context)
 
