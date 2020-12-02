@@ -1,0 +1,45 @@
+
+
+/* Contact Page */
+
+#contactcontainer h1 {
+  text-align:left;
+
+}
+
+#contactcontainer ul {
+  text-align:left;
+  justify-content: center;
+}
+
+#contactcontainer li{
+  display:inline-block;
+  max-width:400px;
+  margin-right:20px;
+  vertical-align:top;
+  justify-content: center;
+}
+
+#contactform input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+#contactform input[type=submit]{
+  padding:10px 20px;
+  font-family:'Lato', sans-serif;
+  font-size:1.2em;
+  font-weight:700;
+  text-decoration:none;
+  color:#fff;
+  background-color:#1a752a;
+  border-radius:10px;
+  outline:none;
+  border:none;
+  transition:background-color 0.5s;
+}

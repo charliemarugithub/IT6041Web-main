@@ -22,7 +22,7 @@
             position: fixed;
             width: 100%;
             top: 40px;
-            background: #5ed100;
+            background: white;
             left: 0px;
             text-align: right;
 
@@ -36,10 +36,11 @@
           display: inline-block;
           cursor: pointer;
           float: left;
-          margin-top: auto;
           border: none;
-          background-color: transparent;
+          background-color: white;
           -moz-user-focus: none;
+          padding-top: 35px;
+          padding-left: 25px;
         }
 
         .burger-button:focus {
@@ -48,7 +49,7 @@
         }
 
         .bar1, .bar2, .bar3 {
-          width: 35px;
+          width: 40px;
           height: 5px;
           background-color: #333;
           margin: 6px 0;
@@ -80,16 +81,18 @@
         #menu-content li {
           padding-left: 1px;
           z-index: 2; /* ensure links displays over content*/
-          width: 100%;
+          width: 10%;
+          padding-left: 30px;
+
         }
 
         #menu-content a:hover {
-          background-color: #e1cda8;
+          background-color: #f0f0f0;
         }
 
         .nav-item a {
           color: #737373;
-          background-color: #5ed100;;
+          background-color: white;
         }
 
         .alert {
@@ -181,13 +184,12 @@
                     </button>
                   </div>
 
-
-
                   <!-- Centered link -->
                   <div class="topnav-centered">
-                      <a href="{% url 'index' %}" class="active" title="Home page"><h1>GreenWorld's</h1></a>
+                      <a href="{% url 'index' %}" class="active" title="Home page">
+                        <img src="/media/GreenWorldLogo.png" alt="GreenWorld Logo"  style="width: 175px; height:150px;">
+                      </a>
                   </div>
-
 
                   <!-- Right-aligned links checking if user is authenticate or not-->
                   {% if user.is_authenticated %}
@@ -195,7 +197,7 @@
                          <a class="nav-item-username nav-link" href="#">Welcome {{ user.username }}</a>
                          <a class="nav-item-logout nav-link" href="{% url 'logout' %}">Logout</a>
                          <a class="nav-item-cart nav-link" href="{% url 'cart' %}">
-                         <img id="cart-icon" src="{% static 'media/cart.jpg' %}">
+                         <img id="cart-icon" src="{% static 'media/cart_white.jpg' %}">
                           <p id="cart-total">{{ cartItems }}</p>
                          </a>
                         {% else %}
@@ -203,7 +205,7 @@
                             <a class="nav-item-login nav-link" href="{% url 'login' %}">Login</a>
                             <a class="nav-item-register nav-link" href="{% url 'register' %}">Register</a>
                             <a class="nav-item-cart nav-link" href="{% url 'cart' %}">
-                             <img id="cart-icon" src="{% static 'media/cart.jpg' %}">
+                             <img id="cart-icon" src="{% static 'media/cart_white.jpg' %}">
                              <p id="cart-total">{{ cartItems }}</p>
                             </a>
                         </div>
@@ -232,7 +234,6 @@
                   </li>
                   {% endif %}
 
-
                   <li class="nav-item">
                       <a class="nav-link scroll-link" href="{% url 'staff' %}">Staff</a>
                   </li>
@@ -258,7 +259,8 @@
        <!-- FOOTER -->
       <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2020 Ecotech Ltd &middot; <a href="{% url 'privacy' %}">Privacy</a> &middot; <a href="{% url 'terms' %}">Terms</a></p>
+        <p>&copy; 2020 Ecotech Ltd &middot; <a href="{% url 'privacy' %}">Privacy</a> &middot; <a href="{% url 'terms' %}">Terms</a>
+        &middot; <a href="{% url 'contact' %}">Contact us</a></p>
       </footer>
     </main>
   <script>

@@ -23,83 +23,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c47cdc49-122d-49ad-9400-fa7708044cda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/IT6041App/static/IT6041App/newstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/static/IT6041App/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/static/IT6041App/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/allproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/allproducts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/clothing.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/clothing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/furniture.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/furniture.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/privacy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/staff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/terms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/templates/Users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Users/templates/Users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/templates/Users/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Users/templates/Users/logout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/templates/Users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Users/templates/Users/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/templates/Users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Users/templates/Users/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/4pk_Organic_Box_Fit_TShirts.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/4pk_Organic_Box_Fit_TShirts_EIV7Qpi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/4pk_Organic_Box_Fit_TShirts_EIV7Qpi_62YIPx1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Avocado-Green-Mattress-Dressers-Side-Tables-web-31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Avocado-Green-Mattress-Dressers-Side-Tables-web-31_Vq0FLV3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Avocado-Green-Mattress-Dressers-Side-Tables-web-60.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Avocado-Green-Mattress-Dressers-Side-Tables-web-60_cjHuLRu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Baby_Fitz_Organic_Shirt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Bamboo_Stakes.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Bamboo_Stakes_0zxaKwV.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Biodegradable_broom.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Biodegradable_broom_JwMBQyb.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Ceramic_Labels.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Ceramic_Labels_p1j8fv4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Citrus_Orange_Eco_Cleaner_5_Litre_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ECO_Planet_All_Purpose_Cleaner_Grapefruit__Mint_500m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ECO_Planet_All_Purpose_Cleaner_Grapefruit__Mint_500m_to81adn.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Earthwise_natural-multi-surface-cleaner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Earthwise_natural-multi-surface-cleaner_iescmJn.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Earthwise_natural-multi-surface-cleaner_iescmJn_7kCEkD8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Eco_table_Eko.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Entity_Sweatshirt_Black.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Entity_Sweatshirt_Black_Xd1lUPg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/H2O_e3_natural_Cleaning_Mop_System.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/H2O_e3_natural_Cleaning_Mop_System_2gi1rBD.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Ha-Ra_Cleaning_Cloth_-_Star.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Ha-Ra_Cleaning_Cloth_-_Star_reEWX7Z.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Jute_Graden_Bag.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Jute_Graden_Bag_2cWYFXU.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Jute_Twine.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Jute_Twine_V3gfPAY.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Men_s-Long-Sleeve.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Men_s-Long-Sleeve_dFUlDP6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Men_s-Long-Sleeve_jKwut4A.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Mens_Long_Sleeve_P6_Logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Mens_Long_Sleeve_P6_Logo_U2NMVfy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Natural-Wood-Bed-Frame-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Natural-Wood-Bed-Frame-2_fsbbkn5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Pine_and_Sweet_Orange_Surface_Cleaner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Prana_Westside_Jacket.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Prana_Westside_Jacket_XncEPOU.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Cleaning_Brush.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Cleaning_Brush_WZzH8YE.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Cleaning_cloth.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Cleaning_cloth_s8BhPzO.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Eco_Flyspray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Eco_Flyspray_oOLrEbx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Metal_Glove.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Metal_Glove_AXvySOO.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Wodden_Rattrap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Sustainable_Wodden_Rattrap_quXIgxb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/compostable-bin-liners-36l-plant-ly.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/compostable-bin-liners-36l-plant-ly_vgiEBFc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/eco-scrub-euroscrubby-ecowarehouse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/eco-scrub-euroscrubby-ecowarehouse_zyfeWb7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/eco-scrub-euroscrubby-ecowarehouse_zyfeWb7_wvQJX26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ecofullhouse.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ecofullhouse_ksVnIgE.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/harmony-sofa-82-o.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/harmony-sofa-82-o_RSQuSyw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/harmony-sofa-82-o_zXyIAMt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/hoodie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/hoodie_AYotGQh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/kitchen-towels-100-biodegradable-greencane.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/kitchen-towels-100-biodegradable-greencane_rnFCFjA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/kitchen-towels-100-biodegradable-greencane_rnFCFjA_8eAuhIo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/mood-store-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/mood-store-7_MIaQFCi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/nail_brush.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/panorama-pop-up-storage-coffee-table-feather-gray-o.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/panorama-pop-up-storage-coffee-table-feather-gray-o_GXRg9Gu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vegetable-brush-dishy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/watering_can.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/weleda-men-deodorant-roll-on-weleda-nz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/weleda-men-deodorant-roll-on-weleda-nz_KDfSVpi.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,8 +54,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -130,11 +75,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/IT6041App/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/IT6041App/static/IT6041App" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\static\IT6041App" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\migrations" />
       <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
       <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\IT6041App\migrations" />

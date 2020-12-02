@@ -41,7 +41,8 @@ body h1 {
 .topnav {
   position: relative;
   overflow: hidden;
-  background-color: #5ed100;
+  background-color: white;
+  height: 150px;
 }
 
 .topnav a {
@@ -54,12 +55,12 @@ body h1 {
 }
 
 .topnav a:hover {
-  background-color: #5ed100;
+  background-color: #f0f0f0;
   color: #737375;
 }
 
 .topnav a.active {
-  background-color: #5ed100;
+  background-color: white;
   color: #737373;
 }
 
@@ -78,6 +79,7 @@ body h1 {
 
 .topnav-right {
   float: right;
+  padding-top: 35px;
 }
 
 

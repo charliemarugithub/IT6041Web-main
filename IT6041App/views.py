@@ -225,3 +225,13 @@ def product_details(request, id):
     cartItems = data['cartItems']
     obj = get_object_or_404(Products, pk=id)
     return render(request, 'IT6041App/product_details.html', {'obj': obj, 'cartItems': cartItems})
+
+
+def contact(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
+    carousel = Products.objects.filter(carousel_listing=True)
+    return render(request, 'IT6041App/contact.html',  {'title': 'Contacts',
+                                                       'data': data,
+                                                       'cartItems': cartItems,
+                                                       'carousel': carousel})
