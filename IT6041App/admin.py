@@ -9,8 +9,7 @@ from .models import Products, \
 
 # Register your models here.
 class ProductsAdmin(admin.ModelAdmin):
-    list_display = ('id',
-                    'product_name',
+    list_display = ('product_name',
                     'category',
                     'description',
                     'price',

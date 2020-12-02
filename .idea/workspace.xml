@@ -25,16 +25,11 @@
     <list default="true" id="c47cdc49-122d-49ad-9400-fa7708044cda" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/static/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/static/js/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/staff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041Project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041Project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/GreenWorldLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/GreenWorldLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/charlie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/charlie_GYtIJJX.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/charlie_NJRrx3o.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/charlie_rT0UHXU.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/coupons/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +64,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\migrations" />
+      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
+      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\IT6041App\migrations" />
+      <recent name="C:\Users\mackm\PycharmProjects\Ecommerce\EcommerceApp\static\EcommerceApp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media\profile_pics" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\templates\IT6041App" />
       <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
       <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\IT6041App\static\media" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\migrations" />
-      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
-      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\IT6041App\migrations" />
-      <recent name="C:\Users\mackm\PycharmProjects\Ecommerce\EcommerceApp\static\EcommerceApp" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

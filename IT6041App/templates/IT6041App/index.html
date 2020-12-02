@@ -126,6 +126,7 @@
                         <div class="box-element product">
                             <h6><strong>{{ i.product_name }}</strong></h6>
                             <hr>
+                            <br>
                             <button data-product="{{ i.id }}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
                             <a class="btn btn-outline-success" href=" {% url 'product_details' i.id %}">View</a>
                             <h4 style="display: inline-block; float: right">${{ i.price }}</h4>

@@ -57,7 +57,7 @@
 							<th>
 								<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
 							</th>
-							{% if order.coupon %}
+							{% if coupon.code %}
 							<tr>
 								<td>{{ order.get_cart_total }}<h5>Subtotal {{ order.get_cart_total }}</h5></td>
 								<td colspan="4"></td>
@@ -65,7 +65,7 @@
 							</tr>
 
 							<tr>
-								<td>{{ order.coupon.code }}  ({{ order.coupon.discount }}% off)</td>
+								<td>{{ coupon.code }}  ({{ coupon.discount }}% off)</td>
 								<td colspan="4"></td>
 								<td class="num neg">- ${{ order.get_discount|floatformat:2 }}</td>
 							</tr>
