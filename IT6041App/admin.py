@@ -4,13 +4,13 @@ from .models import Products, \
     Order, \
     OrderItem, \
     ShippingAddress, \
-    Staff, \
-    Voucher
+    Staff
 
 
 # Register your models here.
 class ProductsAdmin(admin.ModelAdmin):
-    list_display = ('product_name',
+    list_display = ('id',
+                    'product_name',
                     'category',
                     'description',
                     'price',
@@ -23,7 +23,7 @@ class ProductsAdmin(admin.ModelAdmin):
                     )
 
     def product_name(self, obj):
-        return obj.product_name
+        return obj.id
 
 
 class CustomersAdmin(admin.ModelAdmin):
@@ -95,17 +95,9 @@ class MemberAdmin(admin.ModelAdmin):
                     'display')
 
 
-class VoucherAdmin(admin.ModelAdmin):
-    list_display = ('voucher_type',
-                    'voucher_code',
-                    'description',
-                    )
-
-
 admin.site.register(Products, ProductsAdmin)
 admin.site.register(Customer, CustomersAdmin)
 admin.site.register(Order, OrdersAdmin)
 admin.site.register(OrderItem, OrderItemsAdmin)
 admin.site.register(ShippingAddress, ShippingAddressAdmin)
-admin.site.register(Voucher, VoucherAdmin)
 admin.site.register(Staff, StaffAdmin)

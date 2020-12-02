@@ -18,7 +18,7 @@ class Products(models.Model):
 
     class Meta:
         verbose_name_plural = 'Products'
-        ordering = ('-product_name',)
+        ordering = ('product_name',)
 
     def __str__(self):
         return str(self.id)
@@ -102,25 +102,6 @@ class ShippingAddress(models.Model):
 
     def __str__(self):
         return self.address
-
-
-
-
-class Voucher(models.Model):
-    voucher_type = models.CharField(max_length=40, default='', null=True)
-    voucher_code = models.CharField(max_length=20, default='', null=True)
-    description = models.CharField(max_length=200, default='', null=True)
-
-    class Meta:
-        ordering = ('-voucher_type',)
-
-    def __str__(self):
-        return self.voucher_type
-
-    # Voucher example:
-    # voucher_type = "Discount25"
-    # voucher_code = "dh9277jd"
-    # description = "Get 25% off your current order."
 
 
 class Staff(models.Model):

@@ -77,12 +77,8 @@ WSGI_APPLICATION = 'IT6041Project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'IT6041Project',
-        'CLIENT': {
-            'host':
-                'mongodb+srv://admin:admin@it6041project.mxz4f.mongodb.net/IT6041Project?retryWrites=true&w=majority',
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
