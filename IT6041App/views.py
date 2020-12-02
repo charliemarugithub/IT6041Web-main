@@ -141,7 +141,7 @@ def staff(request):
         order = {'get_cart_total': 0, 'get_cart_items': 0}
         cartItems = order['get_cart_items']
 
-    staff = Staff.objects.all()
+    staff = Staff.objects.filter(public_display=True)
 
     context = {'cartItems': cartItems, 'staff': staff}
     return render(request, 'IT6041App/staff.html', context)
