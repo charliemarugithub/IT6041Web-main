@@ -215,30 +215,51 @@
             </div>
 
             <div class="collapse navbar-collapse" id="menu-content">
-
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="{% url 'index' %}">Home</a>
-                  </li>
 
                   {% if user.is_authenticated %}
+
+                    <li class="nav-item">
+                      <a class="nav-link scroll-link" href="{% url 'index' %}">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link scroll-link" href="{% url 'staff' %}">Staff</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link scroll-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+
                     <li class="nav-item">
                       <a class="nav-link scroll-link" href="{% url 'logout' %}">Logout</a>
                     </li>
+
                   {% else %}
+
+                    <li class="nav-item">
+                      <a class="nav-link scroll-link" href="{% url 'index' %}">Home</a>
+                    </li>
+
                     <li class="nav-item">
                       <a class="nav-link scroll-link" href="{% url 'login' %}">Login</a>
                     </li>
+
                     <li class="nav-item">
                       <a class="nav-link scroll-link" href="{% url 'register' %}">Register</a>
-                  </li>
-                  {% endif %}
+                    </li>
 
-                  <li class="nav-item">
+                    <li class="nav-item">
                       <a class="nav-link scroll-link" href="{% url 'staff' %}">Staff</a>
-                  </li>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link scroll-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+
+                  {% endif %}
               </ul>
-          </div>
+            </div>
         </header>
       </body>
             <!-- message alerts to pop up when user is added and/or items removed from the cart -->
@@ -262,7 +283,7 @@
         <p>&copy; 2020 Ecotech Ltd &middot; <a href="{% url 'privacy' %}">Privacy</a> &middot; <a href="{% url 'terms' %}">Terms</a>
         &middot; <a href="{% url 'contact' %}">Contact us</a></p>
       </footer>
-    </main>
+
   <script>
     function myFunction() {
       var x = document.getElementById("myLinks");
@@ -272,6 +293,7 @@
         x.style.display = "block";
       }
     }
+
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

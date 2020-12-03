@@ -4,6 +4,16 @@
 
 {% block content %}
 
+<style>
+	.total-row {
+	  display: flex;
+      align-items: flex-stretch;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ececec;
+	}
+</style>
+
 <br><br><br><br><br>
 
 	<div class="row justify-content-md-center">
@@ -17,13 +27,13 @@
 					<div class="cart-row">
 						<div style="flex:2"><img class="row-image" src="{{ item.product.imageURL }}"></div>
 						<div style="flex:2"><p>{{ item.product.product_name }}</p></div>
-						<div style="flex:1"><p>${{ item.product.price|floatformat:2 }}</p></div>
 						<div style="flex:1"><p>x{{ item.quantity }}</p></div>
+						<div style="flex:1"><p>${{ item.product.price|floatformat:2 }}</p></div>
 					</div>
 				{% endfor %}
-					<div class="total-row" align="right">
-						<h5>Items:   {{ order.get_cart_items }}</h5>
-						<h5>Total:   ${{ order.get_cart_total|floatformat:2 }}</h5>
+					<div class="total-row">
+						<div style="flex:4" align="right"><h5>No of Items:   {{ order.get_cart_items }}</h5></div>
+						<div style="flex:1"><h5 align="right">Total:   ${{ order.get_cart_total|floatformat:2 }}</h5></div>
 					</div>
 
 			</div>
