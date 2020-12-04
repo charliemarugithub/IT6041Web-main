@@ -47,6 +47,7 @@ class Order(models.Model):
     date_ordered = models.DateTimeField(auto_now_add=True)
     complete = models.BooleanField(default=False)
     transaction_id = models.CharField(max_length=100, null=True)
+    coupon = models.ForeignKey('Coupon', on_delete=models.SET_NULL, blank=True, null=True)
 
     def __str__(self):
         return str(self.id)
@@ -63,19 +64,6 @@ class Order(models.Model):
         total = sum([item.quantity for item in orderitems])
         return total
 
-        @property
-        def coupon(self):
-            if self.coupon_id:
-                return Coupon.objects.get(id=self.coupon_id)
-        return None
-
-    def get_discount(self):
-        if self.coupon:
-            return (self.coupon.discount / Decimal('100')) * self.get_cart_total()
-        return Decimal('0')
-
-    def get_total_price_after_discount(self):
-        return self.get_cart_total() - self.get_discount()
 
 class OrderItem(models.Model):
     product = models.ForeignKey(Products, on_delete=models.SET_NULL, null=True)
@@ -130,7 +118,34 @@ class Staff(models.Model):
             img.thumbnail(output_size)
             img.save(self.profile_image.path)
 
+class Coupon(models.Model):
+    code = models.CharField(max_length=50, unique=True)
+    value = models.IntegerField()
+    active = models.BooleanField(default=True)
+    num_available = models.IntegerField(default=1)
+    num_used = models.IntegerField(default=0)
 
+    def __str__(self):
+        return self.code
+
+    def can_use(self):
+        is_active = True
+
+        if self.active == False:
+            is_active = False
+
+        if self.num_used >= self.num_available and self.num_available != 0:
+            is_active = False
+
+        return is_active
+
+    def use(self):
+        self.num_used = self.num_used + 1
+
+        if self.num_used == self.num_available:
+            self.active = False
+
+        self.save()
 
 
 
