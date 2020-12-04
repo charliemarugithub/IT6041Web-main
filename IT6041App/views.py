@@ -1,12 +1,12 @@
 from django.contrib import messages
-from django.core.mail.backends import console
-from django.shortcuts import render, get_object_or_404
+from django.core.exceptions import ObjectDoesNotExist
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse
 import json
 import datetime
 from .models import *
-from .utils import cookieCart, cartData, guestOrder
-from coupons.forms import CouponApplyForm
+from .utils import cookieCart, cartData
+from .forms import CouponForm, CheckoutForm
 
 
 def index(request):
@@ -19,18 +19,16 @@ def index(request):
 
 
 def cart(request):
-    data = cartData(request)
+def cart(request, user=None):
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
-    coupon_apply_form = CouponApplyForm()
 
     context = {'items': items,
                'order': order,
                'cartItems': cartItems,
-               'coupon_apply_form': coupon_apply_form}
+               }
 
-    print(coupon_apply_form)
     return render(request, 'IT6041App/cart.html', context)
 
 
@@ -39,8 +37,15 @@ def checkout(request):
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
+        form = CheckoutForm()
 
-    context = {'items': items, 'order': order, 'cartItems': cartItems}
+    context = {'items': items,
+               'order': order,
+               'cartItems': cartItems,
+               'form': form,
+               'couponform': CouponForm()
+               }
+
     return render(request, 'IT6041App/checkout.html', context)
 
 
@@ -231,7 +236,36 @@ def contact(request):
     data = cartData(request)
     cartItems = data['cartItems']
     carousel = Products.objects.filter(carousel_listing=True)
-    return render(request, 'IT6041App/contact.html',  {'title': 'Contacts',
-                                                       'data': data,
-                                                       'cartItems': cartItems,
-                                                       'carousel': carousel})
+    return render(request, 'IT6041App/contact.html', {'title': 'Contacts',
+                                                      'data': data,
+                                                      'cartItems': cartItems,
+                                                      'carousel': carousel})
+
+
+def get_coupon(request, code):
+    try:
+        coupon = Coupon.objects.get(code=code)
+        return coupon
+    except ObjectDoesNotExist:
+        messages.info(request, "This coupon does not exist")
+        return redirect('cart/')
+
+
+def add_coupon(request):
+    customer = request.user.customer
+    if request.method == 'POST':
+        form = CouponForm(request.POST or None)
+        if form.is_valid():
+            try:
+                code = form.cleaned_data.get('code')
+                order, created = Order.objects.get_or_create(customer, complete=False)
+                order.coupon = get_coupon(request, code)
+                order.save()
+                messages.success(request, "Successfully added coupon")
+                return redirect('checkout/')
+
+            except ObjectDoesNotExist:
+                messages.info(request, "You do not have an active order")
+                return redirect('checkout/')
+    # TO DO raise error here
+    return None
