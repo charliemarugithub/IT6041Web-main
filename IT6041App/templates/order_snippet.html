@@ -1,0 +1,46 @@
+{% extends "IT6041App/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+    footer {
+      display: none;
+    }
+</style>
+
+<div class="col-md-12 mb-4">
+    <h4 class="d-flex justify-content-between align-items-center mb-3">
+    </h4>
+    <ul class="list-group mb-3 z-depth-1">
+
+        <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+            <h6 class="my-0">Promo code</h6>
+            <small>{{ order.coupon.code }}</small>
+            </div>
+            <strong>
+                <span class="text-success" style="margin-right: 60px;">-5${{ order.coupon.amount }}</span>
+            </strong>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <span>Total (NZD)</span>
+            <h4><strong style="margin-right: 55px;">${{ order.get_cart_total|floatformat:2 }}</strong></h4>
+        </li>
+    </ul>
+
+    <form class="card p-2" action="{% url 'add_coupon' %}" method="POST">
+        {% csrf_token %}
+        <div class="input-group">
+            <!-- <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username"
+            aria-describedby="basic-addon2"> -->
+            {{ couponform.code }}
+            <div class="input-group-append">
+                <button class="btn btn-secondary btn-md waves-effect m-0" type="submit">Redeem</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}

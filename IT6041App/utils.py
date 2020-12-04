@@ -1,6 +1,5 @@
 import json
 from .models import *
-from coupons.views import coupon_apply
 
 
 def cookieCart(request):

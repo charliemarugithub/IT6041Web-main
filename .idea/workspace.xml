@@ -23,9 +23,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c47cdc49-122d-49ad-9400-fa7708044cda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/IT6041App/templates/order_snippet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041Project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041Project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041Project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041Project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupons/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -69,11 +88,11 @@
       <recent name="C:\Users\mackm\PycharmProjects\Ecommerce\EcommerceApp\static\EcommerceApp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\templates" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media\profile_pics" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\templates\IT6041App" />
       <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
-      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\IT6041App\static\media" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

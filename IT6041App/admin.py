@@ -4,7 +4,8 @@ from .models import Products, \
     Order, \
     OrderItem, \
     ShippingAddress, \
-    Staff
+    Staff, \
+    Coupon
 
 
 # Register your models here.
@@ -94,9 +95,18 @@ class MemberAdmin(admin.ModelAdmin):
                     'display')
 
 
+class CouponAdmin(admin.ModelAdmin):
+    list_display = ('code',
+                    'value',
+                    'active',
+                    'num_available',
+                    'num_used')
+
+
 admin.site.register(Products, ProductsAdmin)
 admin.site.register(Customer, CustomersAdmin)
 admin.site.register(Order, OrdersAdmin)
 admin.site.register(OrderItem, OrderItemsAdmin)
 admin.site.register(ShippingAddress, ShippingAddressAdmin)
 admin.site.register(Staff, StaffAdmin)
+admin.site.register(Coupon, CouponAdmin)

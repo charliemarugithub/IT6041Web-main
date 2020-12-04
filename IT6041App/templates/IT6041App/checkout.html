@@ -4,15 +4,22 @@
 
 {% block content %}
 
-<br><br><br><br><br>
+
+<br><br><br><br>
 
 	<div class="row justify-content-md-center">
 		<div class="col-lg-6">
 			<div class="box-element">
-				<a class="btn btn-outline-dark" href="{% url 'cart' %}">Back to Cart</a>
-				<hr>
 				<h3>Order Summary - Checkout</h3>
 				<hr>
+				<div class="cart-row">
+					<a class="btn btn-outline-dark" href="{% url 'cart' %}">Back to Cart</a>
+					<div style="flex:1"></div>
+					<div style="flex:1" align="left"><strong>Item</strong></div>
+					<div style="flex:1" align="center"><strong>Price</strong></div>
+					<div style="flex:1" align="left"><strong>Quantity</strong></div>
+				</div>
+
 				{% for item in items %}
 					<div class="cart-row">
 						<div style="flex:2"><img class="row-image" src="{{ item.product.imageURL }}"></div>
@@ -22,9 +29,10 @@
 					</div>
 				{% endfor %}
 					<div class="total-row" align="right">
-						<h5>Items:   {{ order.get_cart_items }}</h5>
-						<h5>Total:   ${{ order.get_cart_total|floatformat:2 }}</h5>
+						<h3><span class="badge badge-secondary badge-pill" style="margin-right: 50px; padding: 5px;">Items: {{ order.get_cart_items}}</span></h3>
 					</div>
+
+				{% include 'order_snippet.html' %}
 
 			</div>
 		</div>
@@ -74,6 +82,13 @@
 	 </div>
 
     <br><br><br>
+
+       <!-- FOOTER -->
+      <div class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020 GreenWorld Ltd &middot; <a href="{% url 'privacy' %}">Privacy</a> &middot; <a href="{% url 'terms' %}">Terms</a>
+        &middot; <a href="{% url 'contact' %}">Contact us</a></p>
+      </div>
 
 <script type="text/javascript">
 		var shipping = '{{order.shipping}}'
