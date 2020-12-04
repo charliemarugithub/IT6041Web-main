@@ -18,8 +18,8 @@ def index(request):
     return render(request, 'IT6041App/index.html', context)
 
 
-def cart(request):
 def cart(request, user=None):
+    data = cartData(request)
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
@@ -37,7 +37,7 @@ def checkout(request):
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
-        form = CheckoutForm()
+    form = CheckoutForm()
 
     context = {'items': items,
                'order': order,

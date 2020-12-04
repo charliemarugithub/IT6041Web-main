@@ -91,16 +91,17 @@ class MemberAdmin(admin.ModelAdmin):
                     'mobile',
                     'role',
                     'image',
-                    'display')
+                    'display'
+                    )
 
-    
-    
- class CouponAdmin(admin.ModelAdmin):
+
+class CouponAdmin(admin.ModelAdmin):
     list_display = ('code',
                     'value',
                     'active',
                     'num_available',
-                    'num_used')   
+                    'num_used'
+                    )
 
     
 admin.site.register(Products, ProductsAdmin)
