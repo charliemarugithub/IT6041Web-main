@@ -4,37 +4,35 @@
 
 {% block content %}
 
-<style>
-	.total-row {
-	  display: flex;
-      align-items: flex-stretch;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #ececec;
-	}
-</style>
 
-<br><br><br><br><br>
+<br><br><br><br>
 
 	<div class="row justify-content-md-center">
 		<div class="col-lg-6">
 			<div class="box-element">
-				<a class="btn btn-outline-dark" href="{% url 'cart' %}">Back to Cart</a>
-				<hr>
 				<h3>Order Summary - Checkout</h3>
 				<hr>
+				<div class="cart-row">
+					<a class="btn btn-outline-dark" href="{% url 'cart' %}">Back to Cart</a>
+					<div style="flex:1"></div>
+					<div style="flex:1" align="left"><strong>Item</strong></div>
+					<div style="flex:1" align="center"><strong>Price</strong></div>
+					<div style="flex:1" align="left"><strong>Quantity</strong></div>
+				</div>
+
 				{% for item in items %}
 					<div class="cart-row">
 						<div style="flex:2"><img class="row-image" src="{{ item.product.imageURL }}"></div>
 						<div style="flex:2"><p>{{ item.product.product_name }}</p></div>
-						<div style="flex:1"><p>x{{ item.quantity }}</p></div>
 						<div style="flex:1"><p>${{ item.product.price|floatformat:2 }}</p></div>
+						<div style="flex:1"><p>x{{ item.quantity }}</p></div>
 					</div>
 				{% endfor %}
-					<div class="total-row">
-						<div style="flex:4" align="right"><h5>No of Items:   {{ order.get_cart_items }}</h5></div>
-						<div style="flex:1"><h5 align="right">Total:   ${{ order.get_cart_total|floatformat:2 }}</h5></div>
+					<div class="total-row" align="right">
+						<h3><span class="badge badge-secondary badge-pill" style="margin-right: 50px; padding: 5px;">Items: {{ order.get_cart_items}}</span></h3>
 					</div>
+
+				{% include 'order_snippet.html' %}
 
 			</div>
 		</div>
@@ -84,6 +82,13 @@
 	 </div>
 
     <br><br><br>
+
+       <!-- FOOTER -->
+      <div class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020 GreenWorld Ltd &middot; <a href="{% url 'privacy' %}">Privacy</a> &middot; <a href="{% url 'terms' %}">Terms</a>
+        &middot; <a href="{% url 'contact' %}">Contact us</a></p>
+      </div>
 
 <script type="text/javascript">
 		var shipping = '{{order.shipping}}'
@@ -171,3 +176,4 @@
 	    }
 	</script>
 {% endblock content %}
+
