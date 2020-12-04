@@ -14,17 +14,20 @@
 		  padding-right: 20px;
 		}
 
-		.coupon-apply {
-		  margin-right: 20px;
+		h2 {
+		  display: block;
+		  text-align: center;
 		}
-
 	</style>
 
-    <br><br><br><br>
+    <br><br><br>
+
 	<div class="row justify-content-md-center">
 		<div class="col-lg-6">
 			<br>
             <div class="box-element">
+				<h3>Your Cart</h3>
+				<hr>
 				<div class="cart-row">
 					<a class="btn btn-outline-dark" href="{% url 'index' %}">Continue Shopping</a>
 					<div style="flex:1"></div>
@@ -54,42 +57,29 @@
 				{% endfor %}
 				</div>
 				<br>
-			<div class="box-element">
-				<table class="table">
-					<tr>
-						<th><h5>Items:<strong>{{ order.get_cart_items }}</strong></h5></th>
-						<th colspan="2" id="total-cost" align="right"><h5>Total:<strong>$ {{ order.get_cart_total|floatformat:2  }}</strong></h5></th>
-						<th>
-							<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
-						</th>
-						{% if coupon.active == 'True' %}
-						<tr>
-							<td>{{ order.get_cart_total }}<h5>Subtotal {{ order.get_cart_total }}</h5></td>
-							<td colspan="4"></td>
-							<td class="num">${{ order.get_cart_total }}</td>
-						</tr>
+				<div class="box-element">
+					<table class="table">
 
 						<tr>
-							<td>{{ coupon.code }}  ({{ coupon.discount }}% off)</td>
-							<td colspan="4"></td>
-							<td class="num neg">- ${{ order.get_discount|floatformat:2 }}</td>
+							<td class="list-group-item d-flex justify-content-between">
+								<h3><span class="badge badge-secondary badge-pill" style="margin-left: 650px; padding: 5px;">Items: {{ order.get_cart_items}}</span></h3>
+								<h5><strong>${{ order.get_cart_total|floatformat:2 }}</strong></h5>
+							</td>
 						</tr>
-						{% endif %}
-				</table>
-				<div class="coupon-apply">
-					<div class="coupon-row">
-						<div style="flex:1" align="right">
-							<form action="{% url 'coupons:apply' %}" method="post">
-								{{ coupon_apply_form }}
-								<input type="submit" value="Apply">
-								{% csrf_token %}
-							</form>
-						</div>
-					</div>
+						<table class="table">
+							<tr>
+								<th></th>
+								<th>
+									<a  style="float:right; margin:5px;" class="btn btn-success"
+										href="{% url 'checkout' %}">Checkout</a>
+								</th>
+							</tr>
+						</table>
+					</table>
 				</div>
 			</div>
 		</div>
 	</div>
-
     <br><br><br>
+{% endblock content%}
 {% endblock content%}
