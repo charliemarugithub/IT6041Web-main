@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 
 from IT6041App.utils import cartData
-from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
+from .forms import UserRegisterForm, UserUpdateForm
 
 
 def register(request):
@@ -21,6 +21,7 @@ def register(request):
     return render(request, 'Users/register.html', {'form': form, 'cartItems': cartItems})
 
 
+''' commenting out until I need to use it 
 @login_required
 def profile(request):
     data = cartData(request)
@@ -45,4 +46,4 @@ def profile(request):
         'cartItems': cartItems,
     }
     return render(request, 'Users/profile.html', context)
-
+'''

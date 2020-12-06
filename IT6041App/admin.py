@@ -8,6 +8,8 @@ from .models import Products, \
     Coupon
 
 # Register your models here.
+
+
 class ProductsAdmin(admin.ModelAdmin):
     list_display = ('product_name',
                     'category',
