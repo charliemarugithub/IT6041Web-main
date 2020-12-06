@@ -9,7 +9,7 @@ from IT6041App.models import Customer
 @receiver(post_save, sender=User)
 def create_customer(sender, instance, created, **kwargs):
     if created:
-        Customer.objects.create(user=instance)
+        Customer.objects.create(user=instance, name=instance.username, email=instance.email)
 
 
 @receiver(post_save, sender=User)
