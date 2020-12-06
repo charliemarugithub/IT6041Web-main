@@ -257,18 +257,15 @@ def add_coupon(request):
         if form.is_valid():
             try:
                 code = form.cleaned_data.get('code')
-                order = Order.objects.all()
+                customer = request.user.customer
+                order, created = Order.objects.get_or_create(customer=customer, complete=False)
                 order.coupon = get_coupon(request, code)
-                order.update()
+                order.save()
                 messages.success(request, "Successfully added coupon")
                 return redirect('checkout/')
 
             except ObjectDoesNotExist:
                 messages.info(request, "You do not have an active order")
                 return redirect('checkout/')
-
-        else:
-            messages.info(request, "This coupon does not exist")
-
-    else:
-        return None
+    # TODO Raise Error
+    return None
