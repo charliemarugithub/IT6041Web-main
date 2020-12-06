@@ -93,11 +93,18 @@ class ShippingAddress(models.Model):
 
 
 class Staff(models.Model):
+
+    deptChoices = (
+        ('A', 'Administrator'),
+        ('S', 'Staff Member'),
+        ('M', 'Marketing')
+    )
+
     staff_full_name = models.CharField(max_length=200)
     work_email = models.EmailField(max_length=200)
     work_phone = models.CharField(max_length=20)
     mobile_phone = models.CharField(max_length=20)
-    department_role = models.CharField(max_length=200)
+    department_role = models.CharField(max_length=1, default='S', choices=deptChoices)
     profile_image = models.ImageField(default='default.jpg', upload_to='profile_pics')
     public_display = models.BooleanField()
 

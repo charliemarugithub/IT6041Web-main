@@ -202,7 +202,8 @@
                          </a>
                         {% else %}
                         <div class="topnav-right">
-                            <a class="nav-item-login nav-link" href="{% url 'login' %}">Login</a>
+                            <a class="nav-item-username nav-link" href="#">{{ user.username }}</a>
+                            <a class="nav-item-login nav-link" href="{% url 'login' %}">login</a>
                             <a class="nav-item-register nav-link" href="{% url 'register' %}">Register</a>
                             <a class="nav-item-cart nav-link" href="{% url 'cart' %}">
                              <img id="cart-icon" src="{% static 'media/cart_white.jpg' %}">
