@@ -56,6 +56,8 @@ class CheckoutPageTest(TestCase):
 class StaffPageTest(TestCase):
 
     def test_staff_url_resolves_to_index_view(self):
+        # This will throw a 302 error because a user must be
+        # logged in to see this page.
         response = self.client.get('/staff/')
         self.assertEqual(response.status_code, 200)
 
