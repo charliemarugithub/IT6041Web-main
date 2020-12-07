@@ -29,10 +29,12 @@
 					</div>
 				{% endfor %}
 					<div class="total-row" align="right">
-						<h3><span class="badge badge-secondary badge-pill" style="margin-right: 50px; padding: 5px;">Items: {{ order.get_cart_items}}</span></h3>
-					</div>
+						<h3><span class="badge badge-secondary badge-pill" style="margin-right: 50px; padding: 5px;">
+							Items: {{ order.get_cart_items}}</span></h3>
 
 				{% include 'order_snippet.html' %}
+
+					</div>
 
 			</div>
 		</div>

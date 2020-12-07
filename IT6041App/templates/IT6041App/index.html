@@ -77,12 +77,12 @@
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+  <div class="container marketing w3-container">
     <h2>Popular Categories</h2>
     <br>
 
      <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 w3-row-padding">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Clothing</h5>
@@ -92,7 +92,7 @@
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-sm-4 w3-third">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Furniture</h5>
@@ -102,7 +102,7 @@
             </div>
           </div>
 
-         <div class="col-sm-4">
+         <div class="col-sm-4 w3-third">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">All</h5>
@@ -120,7 +120,7 @@
       <div class="row">
           <!-- looping through all products with boolean value 'popular' set to True  -->
           {% for i in products %}
-                <div class="col-sm-4">
+                <div class="col-sm-4 w3-third">
                     <div class="card">
                         <img class="thumbnail"  src="{{ i.image.url }}">
                         <div class="box-element product">
