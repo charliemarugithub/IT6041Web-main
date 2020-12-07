@@ -23,9 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c47cdc49-122d-49ad-9400-fa7708044cda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/IT6041App/tests/tests_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/tests_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/static/IT6041App/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/static/IT6041App/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/staff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/tests/tests_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/tests/tests_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -44,6 +49,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/IT6041App/tests/tests_models.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/IT6041App/models.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1j8MycYtSAlnN2sphlffvdbLJAA" />
@@ -61,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\tests" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media\profile_pics" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\templates\IT6041App" />
       <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
-      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\IT6041App\static\media" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\static\IT6041App" />

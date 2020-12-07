@@ -4,10 +4,6 @@
 
 /* Padding below the footer and lighter body text */
 
-main {
-  width: 75%;
-}
-
 body {
   padding-top: 65px;
   padding-bottom: 3rem;
@@ -276,7 +272,7 @@ body h1 {
 
   .container img {
     height: 250px;
-    width: 300;
+    width: 300px;
   }
 
  }

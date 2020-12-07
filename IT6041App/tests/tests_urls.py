@@ -1,6 +1,5 @@
 from django.test import TestCase, Client
-from IT6041App.models import *
-from django.urls import reverse
+
 
 client = Client()
 

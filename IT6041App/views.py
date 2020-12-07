@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse
@@ -134,6 +135,7 @@ def processOrder(request):
     return JsonResponse('Payment submitted..', safe=False)
 
 
+@login_required
 def staff(request):
     if request.user.is_authenticated:
         customer = request.user.customer
