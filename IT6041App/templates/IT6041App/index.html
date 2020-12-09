@@ -60,7 +60,9 @@
       <!-- rest of carousel items are based on boolean value of 'carousel_listing  -->
       {% for listing in carousel %}
       <div class="carousel-item" >
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="white"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+            <rect width="100%" height="100%" fill="white"/></svg>
         <div class="container">
           <div class="carousel-caption">
             <a href="#">
@@ -82,7 +84,7 @@
     </a>
   </div>
 </main>
-
+<br><br>
 <div class="row-speil">
     <div class="col-sm-6">
          <div class="company-speil">
@@ -149,7 +151,8 @@
                             <h6><strong>{{ i.product_name }}</strong></h6>
                             <hr>
                             <br>
-                            <button data-product="{{ i.id }}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                            <button data-product="{{ i.id }}" data-action="add"  class="btn btn-outline-secondary
+                                add-btn update-cart">Add to Cart</button>
                             <a class="btn btn-outline-success" href=" {% url 'product_details' i.id %}">View</a>
                             <h4 style="display: inline-block; float: right">${{ i.price }}</h4>
                         </div>

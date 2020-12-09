@@ -23,10 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c47cdc49-122d-49ad-9400-fa7708044cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/NewGWLogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/static/IT6041App/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/static/IT6041App/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT6041App/tests/tests_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/tests/tests_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

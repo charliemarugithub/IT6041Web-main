@@ -68,9 +68,12 @@ body h1 {
   padding-top: 35px;
 }
 
+.topnav-right a:hover, nav-item-username, nav-item-username {
+  background-color: #86d32e;
+}
 
 /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+-------------------------------------------------- */nav-item-logout
 
 /* Carousel base class */
 .carousel {
