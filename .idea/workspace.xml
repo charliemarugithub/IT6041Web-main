@@ -23,7 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c47cdc49-122d-49ad-9400-fa7708044cda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/IT6041App/tests/tests_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/tests/tests_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/NewGWLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/templates/IT6041App/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT6041App/tests/tests_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/IT6041App/tests/tests_models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,23 +58,23 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../django-coupons-master/django-coupons-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\static\IT6041App" />
-      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\migrations" />
-      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
-      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\IT6041App\migrations" />
-      <recent name="C:\Users\mackm\PycharmProjects\Ecommerce\EcommerceApp\static\EcommerceApp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\tests" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media\profile_pics" />
       <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\templates\IT6041App" />
       <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\media" />
+      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\static\IT6041App" />
+      <recent name="C:\Users\mackm\Downloads\IT6041Web-main\IT6041Web-main\IT6041App\migrations" />
+      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\media" />
+      <recent name="C:\Users\mackm\OneDrive\Documents\GitHub\IT6041Web\IT6041App\migrations" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,10 +111,10 @@
     <state x="844" y="258" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606869029817" />
     <state x="3074" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604465853768" />
     <state x="844" y="258" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605072335786" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606990343294">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607418566251">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606990343294" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607418566251" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606600137167" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1606861751851">
       <screen x="0" y="0" width="1536" height="824" />

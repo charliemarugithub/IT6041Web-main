@@ -20,8 +20,11 @@ class ProductsModelTest(TestCase):
             carousel_listing=False
         )
 
-    def test_all_product_info_is_not_none(self):
-        self.assertIsNotNone(self.product1)
+    def test_all_product_info(self):
+        self.assertIsNotNone(self.product1, msg='All fields are populated')
+        self.assertEquals(self.product1.category, 'Accessories', msg='Category equals Accessories')
+        self.assertFalse(self.product1.carousel_listing, msg='Carousel listing = False')
+
 
 
 class StaffModelTest(TestCase):
